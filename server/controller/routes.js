@@ -1,7 +1,7 @@
 /* <------------------------------------------------------------------> */
 
 var mysql = require('mysql');
-const databaseString = process.env.JAWSDB_URL || process.env.LOCAL_DATABASE;
+const databaseString = process.env.Guestbook_URL || process.env.LOCAL_DATABASE;
 const databaseConnection = mysql.createConnection(databaseString);
 databaseConnection.connect();
 
