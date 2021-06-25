@@ -2,7 +2,7 @@
 
 var mysql = require('mysql');
 let databaseString = process.env.Guestbook_URL || process.env.LOCAL_DATABASE;
-const databaseConnection = mysql.createConnection(databaseString);
+let databaseConnection = mysql.createConnection(databaseString);
 databaseConnection.connect();
 
 /* <------------------------------------------------------------------> */
